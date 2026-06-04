@@ -1,0 +1,320 @@
+{
+  "site": {
+    "title": "beste iptv abonnement in belgie | BELITVISION",
+    "description": "Koop nu uw IPTV abonnement in België! Geniet van 31.000+ livekanalen en 170.000+ VOD's met 24/7 klantenservice. De beste IPTV Belgie aanbieder voor IPTV abonnement.",
+    "keywords": "iptv belgie, iptv abonnement, iptv belgië, abonnement iptv, iptv kopen, iptv belgium",
+    "brandName": "BELITVISION",
+    "brandSubtitle": "LIVE CHANNELS AND VOD"
+  },
+  "nav": {
+    "home": "Startpagina",
+    "pricing": "Prijzen",
+    "blog": "Blog",
+    "setupGuide": "Installatiegids",
+    "multipleDevices": "Meerdere Apparaten",
+    "languageLabel": "Nederlands",
+    "languageAlt": "Nederlandse vlag",
+    "otherLang": "English",
+    "otherLangAlt": "Engelse vlag",
+    "otherLangUrl": "/en"
+  },
+  "hero": {
+    "title": "beste iptv abonnement in belgie",
+    "subtitle": "Op zoek naar het beste IPTV abonnement in België? Sluit je aan bij BELITVISION voor toegang tot 31.000+ livekanalen en topdiensten zoals +170.000 VOD TV - Series. Het beste IPTV Belgie abonnement wacht op je!",
+    "cta": "IPTV Kopen",
+    "trial": "ProefTest Krijgen",
+    "trialUrl": "https://wa.link/hjxrwp"
+  },
+  "features": {
+    "quality": {
+      "title": "Beste kwaliteit - HD FHD 4K 8K",
+      "desc": "Ervaar ongeëvenaarde streamingkwaliteit met ons IPTV abonnement, leverend topkwaliteit video- en audioprestaties in België."
+    },
+    "channels": {
+      "title": "+ 31.000 kanalen",
+      "desc": "Ontdek meer dan 31.000 kanalen met ons IPTV abonnement, inclusief premiumkanalen uit België voor exclusieve inhoud."
+    },
+    "vod": {
+      "title": "+ 170.000 VOD TV - Series",
+      "desc": "Geniet van een uitgebreide bibliotheek met VOD en series, inclusief topaanbod uit België, beschikbaar via onze IPTV aankoopopties."
+    }
+  },
+  "pricing": {
+    "sectionTitle": "IPTV ABONNEMENT",
+    "heading": "Koop nu je IPTV abonnement bij BELITVISION voor top entertainment in België. Beste prijs voor IPTV Belgie.",
+    "standardTab": "Standard Server",
+    "premiumTab": "Premium Server",
+    "multiDevice": "Abonnement nodig voor 02 apparaten",
+    "multiDeviceLink": "Klik Hier",
+    "mostPopular": "MEEST POPULAIR",
+    "month": "maand",
+    "perMonth": "/maand",
+    "buyNow": "Koop nu",
+    "plans": {
+      "standard": [
+        {
+          "id": "1month",
+          "name": "1 Maand",
+          "price": "14.99",
+          "period": "14.99€/Maand",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+24000 Kanalen",
+            "+160.000 Films en series",
+            "4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1138&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "3months",
+          "name": "3 Maand",
+          "price": "29.99",
+          "period": "9.99€/Maand",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+24000 Kanalen",
+            "+160.000 Films en series",
+            "4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1137&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "6months",
+          "name": "6 Maand",
+          "price": "39.99",
+          "period": "6.66€/Maand",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+24000 Kanalen",
+            "+160.000 Films en series",
+            "4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1136&clear-cart=true",
+          "popular": true
+        },
+        {
+          "id": "1year",
+          "name": "1 Jaar",
+          "price": "59.99",
+          "period": "4.99€/Maand",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+24000 Kanalen",
+            "+160.000 Films en series",
+            "4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1135&clear-cart=true",
+          "popular": false
+        }
+      ],
+      "premium": [
+        {
+          "id": "p1month",
+          "name": "1 Maand",
+          "price": "19.99",
+          "period": "Premium",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+31000 Kanalen",
+            "+170.000 Films en series",
+            "Catch-up en epg-gids",
+            "Vpn m3u-link indien nodig",
+            "8k. 4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2325&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "p3months",
+          "name": "3 Maand",
+          "price": "39.99",
+          "period": "Premium",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+31000 Kanalen",
+            "+170.000 Films en series",
+            "Catch-up en epg-gids",
+            "Vpn m3u-link indien nodig",
+            "8k. 4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2326&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "p6months",
+          "name": "6 Maand",
+          "price": "49.99",
+          "period": "Premium",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+31000 Kanalen",
+            "+170.000 Films en series",
+            "Catch-up en epg-gids",
+            "Vpn m3u-link indien nodig",
+            "8k. 4K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2191&clear-cart=true",
+          "popular": true
+        },
+        {
+          "id": "p1year",
+          "name": "1 Jaar",
+          "price": "69.99",
+          "period": "Premium",
+          "features": [
+            "Alle apparaten zijn ondersteund",
+            "+31000 Kanalen",
+            "+170.000 Films en series",
+            "Catch-up en epg-gids",
+            "Vpn m3u-link indien nodig",
+            "8K. HD. FHD. HEVC-kwaliteit",
+            "M3U MAG Enigma2",
+            "Snelle en stabiele server",
+            "Antivries technologieën",
+            "24/7 Steun"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2174&clear-cart=true",
+          "popular": false
+        }
+      ]
+    }
+  },
+  "newsletter": {
+    "title": "Nieuwsbrief",
+    "desc": "Meld u aan voor onze nieuwsbrief om updates, nieuws, en exclusieve promoties over IPTV kopen en abonnementen bij BELITVISION in België te ontvangen.",
+    "placeholder": "Uw e-mailadres",
+    "button": "Aanmelden"
+  },
+  "stats": {
+    "activeUsers": "actieve gebruikers",
+    "sportChannels": "sport kanalen",
+    "channels": "kanalen",
+    "movies": "films en tv-shows"
+  },
+  "howItWorks": {
+    "title": "Hoe het werkt ?",
+    "subtitle": "Volg deze stappen",
+    "steps": [
+      {
+        "title": "Plaats je bestelling",
+        "desc": "Plaats uw bestelling door de abonnementsperiode van uw voorkeur te kiezen: 1, 3, 6 of 12 maanden."
+      },
+      {
+        "title": "Inloggegevens",
+        "desc": "Ontvang uw inloggegevens die u via uw e-mailadres heeft ontvangen. U ontvangt ook een handleiding."
+      },
+      {
+        "title": "Veel kijkplezier!",
+        "desc": "Geniet nu van alle kanalen, films en series!"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Waarom voor ons kiezen",
+    "subtitle": "Waarom BELITVISION kiezen voor uw IPTV abonnement in België",
+    "items": [
+      {
+        "title": "7 dagen geld-terug-garantie",
+        "desc": "Ervaar onze service zonder risico met onze 7 dagen geld-terug-garantie, waarmee u verzekerd bent van uw tevredenheid of een probleemloze terugbetaling binnen de eerste week van uw abonnement."
+      },
+      {
+        "title": "4K- en 8K-kwaliteit",
+        "desc": "Geniet van streaming van verbluffende 4K- en 8K-kwaliteit op onze website, met ongeëvenaarde helderheid en details voor een meeslepende kijkervaring als nooit tevoren."
+      },
+      {
+        "title": "Eenvoudig in te stellen",
+        "desc": "Ga moeiteloos aan de slag met onze eenvoudige installatiefunctie, zodat u snel en naadloos van onze service kunt genieten zonder ingewikkelde installatie- of configuratiestappen."
+      },
+      {
+        "title": "Geen buffering",
+        "desc": "Geniet van ononderbroken streaming met onze functie zonder buffering, waardoor u verzekerd bent van vloeiend afspelen zonder frustrerende pauzes of onderbrekingen."
+      },
+      {
+        "title": "24/7 Steun",
+        "desc": "Ervaar gemoedsrust met onze 24/7 ondersteuningsfunctie, die 24 uur per dag hulp biedt om al uw vragen of problemen op te lossen."
+      },
+      {
+        "title": "Tevredenheid gegarandeerd",
+        "desc": "Uw tevredenheid is gegarandeerd. We streven ernaar om u de beste streamingervaring te bieden, en als u niet helemaal tevreden bent, zullen we ons best doen om het goed te maken of een terugbetaling te bieden."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Tevreden klantervaringen",
+    "desc": "Ontdek hoe onze uitzonderlijke klantenservice de tevredenheid en het plezier van onze klanten garandeert bij het gebruik van hun IPTV abonnement in België",
+    "alt": "IPTV België tevreden klant review screenshot"
+  },
+  "contact": {
+    "title": "Neem contact op met ons",
+    "desc": "Heeft u vragen, feedback of heeft u hulp nodig? We zijn hier om te helpen. Neem contact op met ons toegewijde ondersteuningsteam voor snelle en vriendelijke hulp.",
+    "whatsapp": "what's app",
+    "whatsappNumber": "+13328956041",
+    "whatsappUrl": "https://wa.me/+13328956041",
+    "email": "email",
+    "emailAddress": "beliptv.manager@gmail.com",
+    "emailUrl": "mailto:beliptv.manager@gmail.com"
+  },
+  "faq": {
+    "title": "IPTV Abonnement: Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Wanneer ontvang ik mijn bestelling?",
+        "a": "Wij verwerken alle bestellingen handmatig, meestal wordt deze direct per e-mail afgeleverd. Vergeet ook niet uw map met ongewenste e-mail te controleren. Houd rekening met wat extra tijd tijdens de spitsuren. Bedankt."
+      },
+      {
+        "q": "Welke apparaten ondersteunt u?",
+        "a": "Het enige wat je nodig hebt is een internetverbinding, Firestick, Android Box, Smart TV, Mag Box, iPhone, Apple TV of een ander Android-ondersteund apparaat. Je moet een van de ondersteunde apps installeren. Log in met de gebruikersnaam en het wachtwoord uit de e-mail en begin met kijken."
+      },
+      {
+        "q": "Ik heb een IPTV abonnement gekocht, maar geen e-mail ontvangen",
+        "a": "We sturen de inloggegevens per e-mail. Soms raakt deze verloren in uw map met ongewenste e-mail/spam. Als de e-mail niet binnen 30 minuten is ontvangen, neem dan contact op met ons ondersteuningsteam."
+      },
+      {
+        "q": "Is het eenvoudig in te stellen?",
+        "a": "Het is heel eenvoudig om onze services op uw apparaat te installeren. We bieden een stapsgewijze installatiehandleiding om u te helpen deze snel te installeren."
+      }
+    ]
+  },
+  "footer": {
+    "welcome": "Welkom",
+    "home": "Startpagina",
+    "pricing": "Prijzen",
+    "multipleDevices": "Meerdere Apparaten",
+    "contactUs": "Contacteer ons",
+    "blog": "Blog",
+    "legal": "Juridisch",
+    "terms": "Algemene Voorwaarden",
+    "refundPolicy": "Terugbetalingsbeleid",
+    "copyright": "Alle rechten voorbehouden."
+  }
+}

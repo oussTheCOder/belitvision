@@ -1,0 +1,320 @@
+{
+  "site": {
+    "title": "IPTV Belgium - Best IPTV Abonnement in Belgium | BELITVISION",
+    "description": "Buy your IPTV subscription in Belgium! Enjoy 31.000+ live channels and 170.000+ VOD with 24/7 customer support. The best IPTV Belgium provider.",
+    "keywords": "iptv belgium, iptv abonnement, iptv belgique, abonnement iptv, iptv belgie, best iptv belgium",
+    "brandName": "BELITVISION",
+    "brandSubtitle": "LIVE CHANNELS AND VOD"
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "setupGuide": "Setup Guide",
+    "multipleDevices": "Multiple Devices",
+    "languageLabel": "English",
+    "languageAlt": "English flag",
+    "otherLang": "Nederlands",
+    "otherLangAlt": "Dutch flag",
+    "otherLangUrl": "/nl"
+  },
+  "hero": {
+    "title": "The Best IPTV Subscription in Belgium",
+    "subtitle": "Looking for the best IPTV subscription in Belgium? Join BELITVISION for access to 31.000+ live channels and top services like +170.000 VOD TV - Series. The best IPTV Belgium subscription awaits you!",
+    "cta": "Buy IPTV",
+    "trial": "Get Trial Test",
+    "trialUrl": "https://wa.link/nrtee4"
+  },
+  "features": {
+    "quality": {
+      "title": "Best Quality - HD FHD 4K 8K",
+      "desc": "Experience the pinnacle of streaming quality with our IPTV subscription, delivering the absolute best in video and audio excellence in Belgium."
+    },
+    "channels": {
+      "title": "+ 31.000 Channels",
+      "desc": "Discover more than 31.000 channels with our IPTV subscription, including premium channels from Belgium for exclusive content."
+    },
+    "vod": {
+      "title": "+ 170.000 VOD TV - Series",
+      "desc": "Enjoy a vast library of VOD and series, including top Belgian content, available through our IPTV purchase options."
+    }
+  },
+  "pricing": {
+    "sectionTitle": "IPTV SUBSCRIPTION",
+    "heading": "Buy your IPTV subscription at BELITVISION for top entertainment in Belgium. Best price IPTV Belgium.",
+    "standardTab": "Standard Server",
+    "premiumTab": "Premium Server",
+    "multiDevice": "Need subscription for 02 Devices",
+    "multiDeviceLink": "Click Here",
+    "mostPopular": "MOST POPULAR",
+    "month": "month",
+    "perMonth": "/month",
+    "buyNow": "Buy Now",
+    "plans": {
+      "standard": [
+        {
+          "id": "1month",
+          "name": "1 Month",
+          "price": "14.99",
+          "period": "14.99€/Month",
+          "features": [
+            "All devices are supported",
+            "+24000 Channels",
+            "+160.000 Movies and Series",
+            "4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1138&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "3months",
+          "name": "3 Months",
+          "price": "29.99",
+          "period": "9.99€/Month",
+          "features": [
+            "All devices are supported",
+            "+24000 Channels",
+            "+160.000 Movies and Series",
+            "4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1137&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "6months",
+          "name": "6 Months",
+          "price": "39.99",
+          "period": "6.66€/Month",
+          "features": [
+            "All devices are supported",
+            "+24000 Channels",
+            "+160.000 Movies and Series",
+            "4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1136&clear-cart=true",
+          "popular": true
+        },
+        {
+          "id": "1year",
+          "name": "1 Year",
+          "price": "59.99",
+          "period": "4.99€/Month",
+          "features": [
+            "All devices are supported",
+            "+24000 Channels",
+            "+160.000 Movies and Series",
+            "4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=1135&clear-cart=true",
+          "popular": false
+        }
+      ],
+      "premium": [
+        {
+          "id": "p1month",
+          "name": "1 Month",
+          "price": "19.99",
+          "period": "Premium",
+          "features": [
+            "All devices are supported",
+            "+31000 Channels",
+            "+170.000 Movies and Series",
+            "Catch-up and EPG Guide",
+            "Vpn M3U link provided if needed",
+            "8k. 4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2325&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "p3months",
+          "name": "3 Months",
+          "price": "39.99",
+          "period": "Premium",
+          "features": [
+            "All devices are supported",
+            "+31000 Channels",
+            "+170.000 Movies and Series",
+            "Catch-up and EPG Guide",
+            "Vpn M3U link provided if needed",
+            "8k. 4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2326&clear-cart=true",
+          "popular": false
+        },
+        {
+          "id": "p6months",
+          "name": "6 Months",
+          "price": "49.99",
+          "period": "Premium",
+          "features": [
+            "All devices are supported",
+            "+31000 Channels",
+            "+170.000 Movies and Series",
+            "Catch-up and EPG Guide",
+            "Vpn M3U link provided if needed",
+            "8k. 4K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2191&clear-cart=true",
+          "popular": true
+        },
+        {
+          "id": "p1year",
+          "name": "1 Year",
+          "price": "69.99",
+          "period": "Premium",
+          "features": [
+            "All devices are supported",
+            "+31000 Channels",
+            "+170.000 Movies and Series",
+            "Catch-up and EPG Guide",
+            "Vpn M3U link provided if needed",
+            "8K. HD. FHD. HEVC quality",
+            "M3U MAG Enigma2",
+            "Fast and Stable server",
+            "AntiFreeze Technologies",
+            "24/7 Support"
+          ],
+          "url": "https://renotechsolutions.net/checkout/?add-to-cart=2174&clear-cart=true",
+          "popular": false
+        }
+      ]
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "desc": "Signup our newsletter to get update information, news, insight or promotions on IPTV subscription at BELITVISION in Belgium.",
+    "placeholder": "Your email address",
+    "button": "Sign Up"
+  },
+  "stats": {
+    "activeUsers": "active users",
+    "sportChannels": "sport channels",
+    "channels": "channels",
+    "movies": "movies and tv shows"
+  },
+  "howItWorks": {
+    "title": "How It Works ?",
+    "subtitle": "Follow those steps",
+    "steps": [
+      {
+        "title": "Place your order",
+        "desc": "Place your order by choosing your preferred subscription period: 1, 3, 6 or 12 months."
+      },
+      {
+        "title": "Login credentials",
+        "desc": "Get your IPTV login credentials delivered via email address. You also get a tutorial guide."
+      },
+      {
+        "title": "Enjoy watching!",
+        "desc": "Enjoy all channels, movies and series now!"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "why choose us",
+    "subtitle": "Why choose BELITVISION for your IPTV subscription in Belgium",
+    "items": [
+      {
+        "title": "7-day Money-Back Guarantee",
+        "desc": "Experience our IPTV service risk-free with our 7-day money-back guarantee, ensuring your satisfaction or a hassle-free refund within the first week of your subscription."
+      },
+      {
+        "title": "4K and 8K Quality",
+        "desc": "Enjoy stunning 4K and 8K quality streaming on our website, delivering unparalleled clarity and detail for an immersive viewing experience like never before."
+      },
+      {
+        "title": "Easy to setup",
+        "desc": "Get started effortlessly with our easy setup feature, allowing you to quickly and seamlessly begin enjoying our service without any complicated installation or configuration steps."
+      },
+      {
+        "title": "No Buffering",
+        "desc": "Enjoy uninterrupted streaming with our no-buffering feature, ensuring smooth playback without frustrating pauses or interruptions."
+      },
+      {
+        "title": "24/7 Support",
+        "desc": "Experience peace of mind with our 24/7 support feature, providing round-the-clock assistance to address any questions or concerns you may have."
+      },
+      {
+        "title": "Satisfaction Guaranteed",
+        "desc": "Your satisfaction is guaranteed. We strive to provide you with the best streaming experience, and if you're not fully satisfied, we'll work to make it right or provide a refund."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Satisfied Customer Experiences",
+    "desc": "Discover how our exceptional support ensures customer satisfaction and product delight for our IPTV subscription in Belgium.",
+    "alt": "IPTV Belgium satisfied customer review screenshot"
+  },
+  "contact": {
+    "title": "Get in Touch with Us",
+    "desc": "Have questions, feedback, or need assistance? We're here to help. Contact our dedicated support team for prompt and friendly assistance.",
+    "whatsapp": "what's app",
+    "whatsappNumber": "+13328956041",
+    "whatsappUrl": "https://wa.me/+13328956041",
+    "email": "email",
+    "emailAddress": "beliptv.manager@gmail.com",
+    "emailUrl": "mailto:beliptv.manager@gmail.com"
+  },
+  "faq": {
+    "title": "IPTV Subscription: Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When Will I Receive My Order?",
+        "a": "We process all the orders manually, usually it's instantly delivered via email. Please don't forget to check your junk folder as well. Please allow some extra time during peak times. Thanks."
+      },
+      {
+        "q": "Which Devices Do You Support?",
+        "a": "All you need is an internet connection, Firestick, Android Box, Smart TV, Mag Box, iPhone, Apple TV or any other Android supported device. You will need to install one of the supported apps. Login using username and password provided in email and start watching."
+      },
+      {
+        "q": "I Purchased IPTV Subscription But Didn't Get Email",
+        "a": "We send the login details via email. Sometimes it gets lost into your junk/spam folder. If the email is not received within 30 minutes please contact our support team."
+      },
+      {
+        "q": "Is It Easy To Setup?",
+        "a": "It's very easy to install our services on your device. We provide step by step installation guide to help you install it quickly."
+      }
+    ]
+  },
+  "footer": {
+    "welcome": "Welcome",
+    "home": "Home",
+    "pricing": "Pricing",
+    "multipleDevices": "Multiple Devices",
+    "contactUs": "Contact us",
+    "blog": "Blog",
+    "legal": "Legal",
+    "terms": "Terms & Conditions",
+    "refundPolicy": "Refund Policy",
+    "copyright": "All Rights Reserved."
+  }
+}

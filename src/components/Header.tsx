@@ -1,0 +1,145 @@
+"use client";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
+
+function Flag({ country }: { country: string }) {
+  if (country === "nl") {
+    return (
+      <svg className="h-5 w-6 rounded-sm shrink-0" viewBox="0 0 24 16">
+        <rect width="24" height="5.33" fill="#AE1C28" />
+        <rect y="5.33" width="24" height="5.34" fill="#FFF" />
+        <rect y="10.67" width="24" height="5.33" fill="#21468B" />
+      </svg>
+    );
+  }
+  return (
+    <svg className="h-5 w-6 rounded-sm shrink-0" viewBox="0 0 60 40">
+      <rect width="60" height="40" fill="#012169" />
+      <path d="M0 0l60 40M60 0L0 40" stroke="#FFF" strokeWidth="6" />
+      <path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" strokeWidth="2" />
+      <rect x="27" width="6" height="40" fill="#FFF" />
+      <rect x="27" width="2" height="40" fill="#C8102E" />
+      <rect y="17" width="60" height="6" fill="#FFF" />
+      <rect y="17" width="60" height="2" fill="#C8102E" />
+    </svg>
+  );
+}
+
+export default function Header() {
+  const t = useTranslations("nav");
+  const s = useTranslations("site");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const pathname = usePathname();
+  const params = useParams();
+  const locale = params.locale as string;
+
+  const otherLocale = locale === "nl" ? "en" : "nl";
+  const otherHref = pathname === "/" ? `/${otherLocale}` : `/${otherLocale}${pathname}`;
+
+  return (
+    <header className="fixed w-full z-50">
+      <nav className="left-0 top-0 w-full z-20 bg-black/70 backdrop-blur-md">
+        <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+          <Link href="/" className="flex flex-col">
+            <span
+              className="bg-clip-text font-extrabold max-w-2xl sm:text-4xl text-2xl text-primary tracking-wider"
+              style={{ fontFamily: "Nero, sans-serif" }}
+            >
+              {s("brandName")}
+            </span>
+            <span className="font-bold italic sm:text-xs text-muted-more tracking-wider" style={{ fontSize: "8px" }}>
+              {s("brandSubtitle")}
+            </span>
+          </Link>
+
+          <div className="flex md:order-2">
+            <div className="p-2 relative">
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="bg-primary cursor-pointer flex gap-2 items-center justify-center p-2 px-4 rounded-sm text-white min-w-[110px]"
+              >
+                <Flag country={locale === "nl" ? "nl" : "gb"} />
+                <span className="text-white text-sm">{t("languageLabel")}</span>
+                <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              {langOpen && (
+                <div className="absolute bg-elevated border border-border flex-col gap-2 flex items-center py-3 rounded-sm top-full mt-1 w-40 right-0 shadow-lg">
+                  <Link
+                    href={pathname === "/" ? "/" : pathname}
+                    locale={otherLocale}
+                    className="cursor-pointer flex gap-2 items-center px-4 py-2 hover:bg-glass-light w-full justify-center"
+                    onClick={() => setLangOpen(false)}
+                  >
+                    <Flag country={locale === "nl" ? "gb" : "nl"} />
+                    <span className="text-muted hover:text-white text-sm">{t("otherLang")}</span>
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              type="button"
+              className="focus:outline-none focus:ring-2 focus:ring-border hover:bg-glass-light inline-flex items-center md:hidden p-2 rounded-lg text-muted text-sm"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg fill="currentColor" aria-hidden="true" className="h-6 w-6" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M3 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            className={`${menuOpen ? "flex" : "hidden"} items-center justify-between md:flex md:order-1 md:w-auto w-full`}
+          >
+            <ul className="bg-elevated border border-border flex flex-col font-medium md:bg-transparent md:border-0 md:flex-row md:mt-0 md:p-0 md:space-x-8 mt-4 p-4 rounded-lg w-full">
+              {[
+                { href: "/", label: t("home") },
+                { href: "/#pricing", label: t("pricing") },
+                { href: "/blog", label: t("blog") },
+                { href: "/blog/setup-guide", label: t("setupGuide") },
+              ].map((item) => {
+                const active = item.href === "/"
+                  ? pathname === "/"
+                  : item.href === "/blog"
+                    ? pathname.startsWith("/blog") && !pathname.includes("/setup-guide")
+                    : item.href === "/blog/setup-guide"
+                      ? pathname.startsWith("/blog/setup-guide")
+                      : pathname === item.href;
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className={`block border-border hover:bg-glass-light hover:text-white md:hover:bg-transparent md:hover:text-primary md:p-0 pl-3 pr-4 py-2 rounded ${
+                        active
+                          ? "bg-primary text-white md:bg-transparent md:text-primary"
+                          : "text-muted"
+                      }`}
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}

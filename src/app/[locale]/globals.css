@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Nero";
+  src: url("https://fonts.cdnfonts.com/css/nero") format("woff2");
+}
+
+@theme {
+  --font-helvetica: "Helvetica", "Arial", sans-serif;
+  --font-nero: "Nero", sans-serif;
+  --color-primary: #2789fc;
+  --color-primary-dark: #1a6dc4;
+  --color-primary-darker: #0f4f8a;
+  --color-accent: #a05094;
+  --color-accent-light: #c071b4;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-muted-more: rgba(255, 255, 255, 0.4);
+  --color-true-dark: #090909;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-light: rgba(255, 255, 255, 0.08);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-elevated: #111111;
+  --color-section-alt: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-left {
+  animation: scroll-left 40s linear infinite;
+}
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
