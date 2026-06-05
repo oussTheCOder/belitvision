@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: Props) {
   return {
     title,
     description,
-    metadataBase: new URL("https://belitvisio.com"),
+    metadataBase: new URL("https://www.belitvision.com"),
     alternates: {
-      canonical: locale === "nl" ? "https://belitvisio.com/blog" : "https://belitvisio.com/en/blog",
+      canonical: locale === "nl" ? "https://www.belitvision.com/blog" : "https://www.belitvision.com/en/blog",
       languages: {
-        nl: "https://belitvisio.com/blog",
-        en: "https://belitvisio.com/en/blog",
+        nl: "https://www.belitvision.com/blog",
+        en: "https://www.belitvision.com/en/blog",
       },
     },
     openGraph: {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props) {
       siteName: "BELITVISION",
       locale: locale === "nl" ? "nl_BE" : "en_US",
       type: "website",
-      url: locale === "nl" ? "https://belitvisio.com/blog" : "https://belitvisio.com/en/blog",
+      url: locale === "nl" ? "https://www.belitvision.com/blog" : "https://www.belitvision.com/en/blog",
       images: [{ url: "/images/home-hero.588c3886.webp", width: 1920, height: 1080 }],
     },
   };
@@ -58,8 +58,8 @@ export default async function BlogPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: isNl ? "Home" : "Home", item: "https://belitvisio.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://belitvisio.com/blog" },
+      { "@type": "ListItem", position: 1, name: isNl ? "Home" : "Home", item: "https://www.belitvision.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.belitvision.com/blog" },
     ],
   };
 

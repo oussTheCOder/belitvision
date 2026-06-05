@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://belitvisio.com/sitemap.xml",
+    sitemap: "https://www.belitvision.com/sitemap.xml",
   };
 }

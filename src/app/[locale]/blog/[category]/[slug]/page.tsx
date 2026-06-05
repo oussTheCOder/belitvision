@@ -54,6 +54,7 @@ export default async function PostPage({ params }: Props) {
   const cat = categories.find((c) => c.slug === category);
   const catLabel = cat ? (isNl ? cat.nl : cat.en) : category;
   const baseUrl = "https://belitvisio.com";
+  const path = `/blog/${category}/${slug}`;
   const imgUrl = post.image || "/images/home-hero.588c3886.webp";
   const imgAlt = post.imageAlt
     ? (isNl ? post.imageAlt.nl : post.imageAlt.en)
@@ -81,7 +82,7 @@ export default async function PostPage({ params }: Props) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/blog/${category}/${post.slug}`,
+      "@id": isNl ? `${baseUrl}${path}` : `${baseUrl}/en${path}`,
     },
   };
 
@@ -89,19 +90,19 @@ export default async function PostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: isNl ? "Home" : "Home", item: baseUrl },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${baseUrl}/blog` },
+      { "@type": "ListItem", position: 1, name: isNl ? "Home" : "Home", item: isNl ? baseUrl : `${baseUrl}/en` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: isNl ? `${baseUrl}/blog` : `${baseUrl}/en/blog` },
       {
         "@type": "ListItem",
         position: 3,
         name: catLabel,
-        item: `${baseUrl}/blog/${category}`,
+        item: isNl ? `${baseUrl}/blog/${category}` : `${baseUrl}/en/blog/${category}`,
       },
       {
         "@type": "ListItem",
         position: 4,
         name: isNl ? post.title.nl : post.title.en,
-        item: `${baseUrl}/blog/${category}/${post.slug}`,
+        item: isNl ? `${baseUrl}${path}` : `${baseUrl}/en${path}`,
       },
     ],
   };

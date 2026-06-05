@@ -3,7 +3,7 @@ type Props = {
 };
 
 export default function JsonLd({ locale }: Props) {
-  const baseUrl = "https://belitvisio.com";
+  const baseUrl = "https://www.belitvision.com";
   const siteUrl = locale === "nl" ? baseUrl : `${baseUrl}/en`;
 
   const organization = {

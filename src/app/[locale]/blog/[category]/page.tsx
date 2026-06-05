@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props) {
 
   const label = locale === "nl" ? cat.nl : cat.en;
   const description = locale === "nl" ? cat.description.nl : cat.description.en;
-  const baseUrl = "https://belitvisio.com";
+  const baseUrl = "https://www.belitvision.com";
   const path = `/blog/${category}`;
 
   return {
@@ -52,7 +52,7 @@ export default async function CategoryPage({ params }: Props) {
   const label = isNl ? cat.nl : cat.en;
   const posts = getPostsByCategory(category);
 
-  const baseUrl = "https://belitvisio.com";
+  const baseUrl = "https://www.belitvision.com";
   const path = `/blog/${category}`;
 
   const breadcrumbJson = {

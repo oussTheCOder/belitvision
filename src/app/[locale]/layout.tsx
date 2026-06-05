@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t("title"),
     description: t("description"),
     keywords: t("keywords"),
-    metadataBase: new URL("https://belitvisio.com"),
+    metadataBase: new URL("https://www.belitvision.com"),
     alternates: {
-      canonical: locale === "nl" ? "https://belitvisio.com" : "https://belitvisio.com/en",
+      canonical: locale === "nl" ? "https://www.belitvision.com" : "https://www.belitvision.com/en",
       languages: {
-        nl: "https://belitvisio.com",
-        en: "https://belitvisio.com/en",
+        nl: "https://www.belitvision.com",
+        en: "https://www.belitvision.com/en",
       },
     },
     openGraph: {
