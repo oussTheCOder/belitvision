@@ -1,9 +1,110 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, getPost } from "@/content/blog";
+import type { ContentBlock } from "@/content/blog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function renderBlocks(blocks: ContentBlock[], isNl: boolean) {
+  const toc: { id: string; text: string }[] = [];
+
+  blocks.forEach((block) => {
+    if (block.type === "h2") {
+      toc.push({ id: slugify(block.text), text: block.text });
+    }
+  });
+
+  return (
+    <>
+      {toc.length > 0 && (
+        <nav className="bg-elevated border border-border rounded-xl p-5 mb-10">
+          <h2 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">
+            {isNl ? "Inhoudsopgave" : "Table of Contents"}
+          </h2>
+          <ul className="space-y-1.5">
+            {toc.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="text-sm text-muted hover:text-primary transition-colors"
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+      <div className="space-y-4">
+        {blocks.map((block, i) => {
+          switch (block.type) {
+            case "h2": {
+              const id = slugify(block.text);
+              return (
+                <h2
+                  key={i}
+                  id={id}
+                  className="text-xl font-bold text-white mt-10 mb-4 scroll-mt-32"
+                >
+                  {block.text}
+                </h2>
+              );
+            }
+            case "h3": {
+              const id = slugify(block.text);
+              return (
+                <h3
+                  key={i}
+                  id={id}
+                  className="text-lg font-semibold text-white mt-8 mb-3 scroll-mt-32"
+                >
+                  {block.text}
+                </h3>
+              );
+            }
+            case "img":
+              return (
+                <figure key={i} className="my-8">
+                  <img
+                    src={block.src}
+                    alt={block.alt}
+                    className="rounded-xl w-full h-auto object-cover"
+                  />
+                  {block.caption && (
+                    <figcaption className="text-sm text-muted mt-2 text-center">
+                      {block.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              );
+            case "html":
+              return (
+                <p
+                  key={i}
+                  className="text-muted leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: block.text }}
+                />
+              );
+            default:
+              return (
+                <p key={i} className="text-muted leading-relaxed">
+                  {block.text}
+                </p>
+              );
+          }
+        })}
+      </div>
+    </>
+  );
+}
 
 type Props = {
   params: Promise<{ locale: string; category: string; slug: string }>;
@@ -56,9 +157,6 @@ export default async function PostPage({ params }: Props) {
   const baseUrl = "https://belitvisio.com";
   const path = `/blog/${category}/${slug}`;
   const imgUrl = post.image || "/images/home-hero.588c3886.webp";
-  const imgAlt = post.imageAlt
-    ? (isNl ? post.imageAlt.nl : post.imageAlt.en)
-    : (isNl ? post.title.nl : post.title.en);
 
   const articleJson = {
     "@context": "https://schema.org",
@@ -107,6 +205,8 @@ export default async function PostPage({ params }: Props) {
     ],
   };
 
+  const content = isNl ? post.content.nl : post.content.en;
+
   return (
     <>
       <Header />
@@ -128,11 +228,7 @@ export default async function PostPage({ params }: Props) {
             <h1 className="text-3xl font-extrabold text-white mb-8">
               {isNl ? post.title.nl : post.title.en}
             </h1>
-            <div className="space-y-4">
-              {(isNl ? post.content.nl : post.content.en).map((paragraph, i) => (
-                <p key={i} className="text-muted leading-relaxed">{paragraph}</p>
-              ))}
-            </div>
+            {renderBlocks(content, isNl)}
           </article>
         </div>
       </section>

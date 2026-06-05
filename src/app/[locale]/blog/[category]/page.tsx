@@ -1,7 +1,5 @@
-import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, getPostsByCategory } from "@/content/blog";
-import type { Category } from "@/content/blog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
@@ -78,24 +76,32 @@ export default async function CategoryPage({ params }: Props) {
             {isNl ? cat.description.nl : cat.description.en}
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
-            {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${category}/${post.slug}`}
-                className="bg-elevated border border-border rounded-xl p-6 hover:border-primary transition-colors"
-              >
-                <p className="text-xs text-muted mb-2">{post.date}</p>
-                <h2 className="text-lg font-semibold text-white mb-2">
-                  {isNl ? post.title.nl : post.title.en}
-                </h2>
-                <p className="text-muted text-sm leading-relaxed">
-                  {isNl ? post.excerpt.nl : post.excerpt.en}
+            {posts.length > 0 ? (
+              posts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${category}/${post.slug}`}
+                  className="bg-elevated border border-border rounded-xl p-6 hover:border-primary transition-colors"
+                >
+                  <p className="text-xs text-muted mb-2">{post.date}</p>
+                  <h2 className="text-lg font-semibold text-white mb-2">
+                    {isNl ? post.title.nl : post.title.en}
+                  </h2>
+                  <p className="text-muted text-sm leading-relaxed">
+                    {isNl ? post.excerpt.nl : post.excerpt.en}
+                  </p>
+                  <span className="text-primary text-sm mt-3 inline-block">
+                    {isNl ? "Lees meer →" : "Read more →"}
+                  </span>
+                </Link>
+              ))
+            ) : (
+              <div className="sm:col-span-2 text-center py-20">
+                <p className="text-muted text-lg">
+                  {isNl ? "Nog geen artikelen in deze categorie. Binnenkort meer!" : "No articles in this category yet. Coming soon!"}
                 </p>
-                <span className="text-primary text-sm mt-3 inline-block">
-                  {isNl ? "Lees meer →" : "Read more →"}
-                </span>
-              </Link>
-            ))}
+              </div>
+            )}
           </div>
         </div>
       </section>

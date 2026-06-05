@@ -1,7 +1,6 @@
-import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, posts } from "@/content/blog";
-import type { BlogPost, Category } from "@/content/blog";
+import type { BlogPost } from "@/content/blog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -112,9 +111,17 @@ export default async function BlogPage({ params }: Props) {
             </aside>
 
             <div className="flex-1 grid sm:grid-cols-2 gap-6">
-              {sorted.map((post) => (
-                <PostCard key={`${post.category}/${post.slug}`} post={post} isNl={isNl} />
-              ))}
+              {sorted.length > 0 ? (
+                sorted.map((post) => (
+                  <PostCard key={`${post.category}/${post.slug}`} post={post} isNl={isNl} />
+                ))
+              ) : (
+                <div className="sm:col-span-2 text-center py-20">
+                  <p className="text-muted text-lg">
+                    {isNl ? "Nog geen blog artikelen beschikbaar. Binnenkort meer!" : "No blog articles available yet. Coming soon!"}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
