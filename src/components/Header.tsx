@@ -58,7 +58,7 @@ export default function Header() {
 
           <div className="flex md:order-2 gap-1">
             <a
-              href={`https://wa.me/12338956041?text=${encodeURIComponent(t("trialMsg"))}`}
+              href={`https://wa.me/13328956041?text=${encodeURIComponent(t("trialMsg"))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20bd5a] cursor-pointer flex gap-1.5 items-center justify-center p-2 px-3 rounded-sm text-white text-sm font-medium transition-colors"

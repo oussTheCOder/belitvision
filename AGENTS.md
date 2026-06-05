@@ -63,7 +63,7 @@ public/images/             # Downloaded assets
 - OpenGraph metadata per locale
 - Canonical URLs pointing to belitvisio.com
 - Site title (NL): "beste iptv abonnement in belgie" (lowercase)
-- WhatsApp: +12338956041
+- WhatsApp: +13328956041
 
 ## Design Tokens (Tailwind v4 `@theme`)
 - `--color-primary`: #2789fc
